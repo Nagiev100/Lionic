@@ -360,6 +360,10 @@ body {
 }
 
 /*contacts*/
+.contacts {
+    border-bottom: 1px solid #DADADA;
+}
+
 .contacts-address {
     font-style: normal;
 }
@@ -367,28 +371,69 @@ body {
 .contacts-item {
     flex-direction: column;
     width: 370px;
-    outline: 1px solid red;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 29px 29px;
+    padding-top: 48px;
 }
 
 .contacts-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 
+.contacts-item-address {
+    background-image: url("../image/svg/Location.svg");
+}
+
+.contacts-item-call {
+    background-image: url("../image/svg/PhoneContacts.svg");
+}
+
+.contacts-item-mail {
+    background-image: url("../image/svg/Mail.svg");
+}
+
 .contacts-item-caption {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 180%;
     margin-bottom: 30px;
+    color: #1C1C1C;
 }
 
 .contacts-item-text {
+    max-width: 215px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
     margin: 0;
+    color: #787878;
 }
 
-.contacts-item-link:not(:last-child) {
-    margin-bottom: 5px;
+.contacts-item-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
 }
 
 /*footer*/
 .footer {
     padding: 42px 0;
+}
+
+.footer-copy {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #787878;
+}
+
+.footer-link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    color: #787878;
 }
 
 .footer-container {
@@ -406,4 +451,33 @@ body {
 
 .footer-item:not(:last-child) {
     margin-right: 28px;
+}
+
+.social-link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.footer-nav {
+    margin-right: 56px;
+}
+
+.social-link-twitter {
+    background-image: url("../image/svg/Twitter.svg");
+}
+
+.social-link-linkedin {
+    background-image: url("../image/svg/Linkedin.svg");
+}
+
+.social-link-mail {
+    background-image: url("../image/svg/MailLink.svg");
 }
